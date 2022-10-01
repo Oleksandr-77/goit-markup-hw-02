@@ -1,21 +1,161 @@
-/* основний чорний колір : #000000 */
-/* синій колір   #2196F3 */
-/* допоміжний чорний : #212121 */
-/* білий color: #FFFFFF; */
+/* чорний колір logo : #000000 */
+/* синій колір акцент  #2196F3 */
+/* основний чорний колір тексту: #212121 */
+/* Основний колір сторінки Background : #FFFFFF; */
+/*  білий color: #F5F5F5 */
 /* background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
-/* сірий :  #757575; */
+/* допоміжний сірий колір тексту:  #757575; */
+/* --фон блоків: #2F303A */
+/* ------ */
 
-
-
-body {
-    color: brown;
-    /* background-color: tomato; */
+:root {
+    --primery-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --black-color: #000000;
+    --white-color: #F5F5F5;
+    --ashy-color: #F5F4FA;
+    --block-color: #2F303A;
 }
 
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primery-text-color);
 
+    font-family: Roboto, sans;
+    letter-spacing: 0.003 ;
+}
+/* -- стилі index.html --*/
+.logo {
+    color: var(--black-color);
+    font-style: Bold;
+    font-size: 26px;
+    line-height: 1.2;
+} 
+.logo-accent {
+    color: var(--accent-color);
+}
+.logo :focus {
+    color: var(--accent-color);
+}
+/* site nav */
+.list {
+    list-style: none;
+}
+.site-nav .link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-style: medium; 
+    font-size: 14px; 
+    line-height: 1.2;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+.contact-firm .link {
+    color: var(--primery-text-color);
+    font-weight: 500;
+    font-style: medium; 
+    font-size: 14px; 
+    line-height: 1.2;
+}
+.contact-firm .link:hover,
+.contact-firm .link:focus {
+    color: var(--accent-color);
+}
 
+/* Герой */
+.hero {
+    background-color: var(--block-color);
+}
+.hero-title {
+    color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 44px; 
+    line-height: 1.36; 
+    line-height: 116%;
+    /* text-align: Center; */
+}
+/*  Секції */
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 1.2;
+}
+/* Особливості компанії*/
+.feature-list .title {
+    color: var(--title-text-color); 
+    
+}
+.section-work {
+    background-color: var(--white-color);
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+/*-- Команда компанії-- */
+.team-list .title {
+    color: var(--title-text-color);
+}
+.section-team {
+    background-color: var(--ashy-color);
+}
+/* button */
 
+.primary-button {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border: 1px solid var(--title-text-color);
+    font-weight: 700;
+    font-style: bold;
+    font-size: 16px; 
+    line-height: 1.8; 
+    line-height: 160%;
+}
+.primary-button:hover {
+    border: 1px solid var(--accent-color);
+}
+.secondary-button {
+    color: var(--title-text-color);
+    background-color: var(--primary-white-color);
+}
+.secondary-button:hover {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+/* --Footer-------*/
+.footer {
+    background-color: #2F303A;
+}
+.logo-studio {
+    color: var(--primary-white-color);
+}
+.site-footer .link {
+    color: var(--primary-white-color);
+}
+.site-footer .link:hover,
+.site-footer .link:focus {
+    color: var(--accent-color);
+}
+
+/* -- стилі portfolio.html -- */
 
 
 
