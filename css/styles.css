@@ -5,7 +5,7 @@
 /* білий color: #F5F5F5 */
 /* допоміжний сірий колір тексту:  #757575; */
 /* --фон блоків: #2F303A */
-/* ------ */
+/* --колір тексту номера та емейл: rgba(255, 255, 255, 0.6);-- */
 :root {
     --primery-text-color: #757575;
     --title-text-color: #212121;
@@ -15,6 +15,8 @@
     --white-color: #F5F5F5;
     --ashy-color: #F5F4FA;
     --block-color: #2F303A;
+    --color-text-number: rgba(255, 255, 255, 0.6)
+
 }
 body {
     background-color: var(--primary-white-color);
@@ -167,8 +169,12 @@ body {
 .logo-studio {
     color: var(--primary-white-color);
 }
-.site-footer .link {
+.adress {
     color: var(--primary-white-color);
+}
+.site-footer .link {
+    color: var(--color-text-number);
+    font-style: normal;
     font-size: 14px; 
     line-height: 1.7;
 }
